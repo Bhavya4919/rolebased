@@ -1,0 +1,36 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Bhavya",
+    "email": "bob@gmrit.edu.in",
+    "password": "123bob",
+    "confPassword": "123bob",
+    "role": "user"
+}
+
+###
+// get ALL Users
+
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/7eb7f442-8ba1-4324-a742-3ab10c34aa7d
+
+###
+// Update User
+
+PATCH http://localhost:5000/users/3a469423-db0b-43ce-be0a-e059deda630a
+
+Content-Type: 'application/json'
+{
+    "name": "Bhavya Updated",
+    "email": "admin@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin"
+}
+###
+
+//delete a user
+DELETE http://localhost:5000/users/dddea8ac-62a7-4fa7-a138-c735d36a6dd3
